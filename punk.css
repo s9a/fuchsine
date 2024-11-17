@@ -1,32 +1,40 @@
-/* https://s9a.page/tape */
-:root{--tape-filter:none;--tape-bluv:#11dff1;--tape-play:#fbbfff;--tape-loud:#eee833;--tape-luvu:#44f477;--tape-blaq:#0e0e0e;--tape-watt:#e0e0e0;--tape-hex:#e0e0e0;--tape-mix:transparent}.tape-watt{--tape-hex:var(--tape-watt)}.tape-luvu{--tape-hex:var(--tape-luvu)}.tape-loud{--tape-hex:var(--tape-loud)}.tape-play{--tape-hex:var(--tape-play)}.tape-bluv{--tape-hex:var(--tape-bluv)}.tape-flat{border-color:transparent}.tape-flap{border-color:currentColor}.tape-flow{--tape-remix:none}.tape-flow :not(.tape-skip){background-color:transparent;color:inherit}.tape-blaq,.tape-bluv,.tape-loud,.tape-luvu,.tape-play,.tape-watt{--tape-mix:var(--tape-hex);--tape-remix:none;color:var(--tape-blaq)!important;background-color:var(--tape-mix)!important;background-image:var(--tape-remix);filter:var(--tape-filter)}.tape-blaq{--tape-mix:var(--tape-blaq);color:var(--tape-hex)!important}.tape-erase,.tape-erase *{color:transparent!important}
-
-/* https://s9a.page/nosh */
-.nosh {
-  --tape-blaq: #315;
-  --tape-play: #f6e;
-  --tape-loud: #ed5;
-  --tape-bluv: #5de;
-  --tape-luvu: #2c8;
-  --tape-watt: #a5e;
+:any-link {
+  color: inherit;
+  background-color: transparent;
 }
 
-/* ¡!¡! */
-.tape-watt { --tape-hey: var(--tape-luvu) }
-.tape-play { --tape-hey: var(--tape-bluv) }
-.tape-loud { --tape-hey: var(--tape-bluv) }
-.tape-luvu { --tape-hey: var(--tape-bluv) }
-.tape-blaq { --tape-hey: var(--tape-watt) }
-.tape-bluv { --tape-hey: var(--tape-play) }
-
-.spill {
-  text-shadow:
-    0 -1ch 0 var(--tape-hey, currentColor),
-    0 -2ch 0 var(--tape-hey, currentColor),
-    0  1ch 0 var(--tape-hey, currentColor),
-    0  2ch 0 var(--tape-hey, currentColor);
+::selection {
+  background-color: navy;
+  color: fuchsia;
 }
 
-:any-link:hover {
-  --tape-filter: hue-rotate(36deg);
+i,
+mark,
+code {
+  background-color: fuchsia;
+  color: navy;
 }
+
+:root {
+  background-color: #1ed;
+  background-image: linear-gradient(#e0e0e0, #1ed, #bae);
+  color: navy;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: navy;
+    background-image: linear-gradient(lawngreen, navy 3%, navy 97%, teal);
+    color: fuchsia;
+  }
+  
+  ::selection {
+    background-color: fuchsia;
+    color: navy;
+  }
+}
+
+.envy { background-color: #de1; color: #111 }
+.cyan { background-color: cyan; color: #111 }
+.yell { background-color: yellow; color: #111 }
+.blaq { background-color: black; color: seashell }

@@ -1,17 +1,10 @@
-:any-link {
-  text-decoration-style: dotted;
+* {
+  box-sizing: border-box;
 }
-
-:focus {
-  outline: thick groove;
-}
-
-* { box-sizing: border-box }
-a { transition: filter 1111ms ease-in-out }
 
 html {
   font-family: sans-serif;
-  font-size: max(1em, 4vmax + 7vmin);
+  font-size: max(24pt, 3vw + 1vh);
   line-height: 1.618;
 }
 
@@ -22,24 +15,68 @@ body {
   overflow-wrap: anywhere;
 }
 
-h1 {
-  font-size: 1em;
-  order: 1111;
-}
-
-.mural {
+article {
   align-items: center;
-  contain: content;
   display: flex;
-  font-weight: unset;
   flex-flow: column;
-  justify-content: center;
-  margin: auto;
-  min-height: 100vh;
-  width: 100%;
+  margin-top: 0;
+  overflow-wrap: anywhere;
+  padding: 3ch;
 }
 
-.spill {
-  transform: rotate(315deg);
-  text-underline-offset: 1ch;
+h1 {
+  font-size: 1.618em;
+  margin: 0 0 2.618rem;
+  font-weight: unset;
+}
+
+figure {
+  order: -1;
+  display: flex;
+  margin: 1rem 0;
+}
+
+samp {
+   content: "";
+   border-style: solid;
+   border-width: 0 1rem 2.618rem 1rem;
+   border-color: transparent;
+   border-bottom-color: fuchsia;
+   border-radius: 100%;
+   display: block;
+}
+
+em {
+  display: inline-block;
+  font: unset;
+  transform: rotate(180deg);
+}
+
+p {
+  margin: 1em auto;
+  max-width: 23em;
+}
+
+i {
+  font: unset;
+}
+
+input {
+  font: unset;
+  min-height: 1em;
+  min-width: 1.618em;
+}
+
+kbd {
+  font-size: 3.618rem;
+  text-shadow: 0 1ex 1pc #1ed, 0 2ex 1pc #de1, 0 3ex 1pc #ec0;
+  vertical-align: text-top;
+}
+
+:any-link {
+  text-decoration-style: wavy;
+}
+
+:focus {
+  outline: thick groove;
 }
