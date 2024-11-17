@@ -1,2 +1,4 @@
-## [fuchsine <br> fuchsine vs magenta](https://s9a.page/fuchsine)
+## [fuchsine](https://s9a.page/fuchsine)
+
+[`fuchsia` verse `magenta`](https://s9a.page/fuchsine)
 
